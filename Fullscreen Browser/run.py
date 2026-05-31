@@ -10,7 +10,7 @@ class KioskBrowser(QMainWindow):
         super().__init__()
         self.kill_explorer()
         self.browser = QWebEngineView()
-        self.browser.setUrl(QUrl("http://google.com:5000"))
+        self.browser.setUrl(QUrl("https://google.com:5000"))
         self.browser.setContextMenuPolicy(Qt.ContextMenuPolicy.CustomContextMenu)
         self.browser.customContextMenuRequested.connect(self.show_context_menu)
         self.setCentralWidget(self.browser)
